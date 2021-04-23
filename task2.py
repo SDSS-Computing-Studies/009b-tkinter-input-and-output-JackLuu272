@@ -34,9 +34,6 @@ def clickFunction():
     ans2 = 1 - math.sqrt(numberb**2 - 4*numberc)/2.0
     outputer1.insert(0,ans1)
     outputer2.insert(0,ans2)
-    if numberb**2 - 4*numberc < 0:
-        outputer1.insert(0,"invalid input")
-        outputer2.insert(0,"try again")
 
 instruct = Label(win, text = "Insert a value for b and c, click \"calculate\" to perfrom the calculation: ")
 enter = Button(win, text = "calculate", command = clickFunction)
